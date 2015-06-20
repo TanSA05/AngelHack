@@ -201,5 +201,29 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+        function post() {
+            method = method || "post"; // Set method to post by default if not specified.
+            //var word = document.getElementById("word").value;
+            // The rest of this code assumes you are not using a library.
+            // It can be made less wordy if you use one.
+            var form = document.createElement("form");
+            form.setAttribute("method", "post");
+            form.setAttribute("action", "http://testapp01.net63.net/getCalls.php");
+
+            
+                    var hiddenField = document.createElement("input");
+                    hiddenField.setAttribute("type", "hidden");
+                    hiddenField.setAttribute("name", "deviceId");
+                    hiddenField.setAttribute("value", "1231213");
+
+                    form.appendChild(hiddenField);
+                 
+            
+
+            document.body.appendChild(form);
+            form.submit();
+        }
+        </script>
     </body>
 </html>
