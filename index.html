@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Bootstrap 3 Admin</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+        <link href="sticky-footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+<!-- header -->
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Dashboard</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> Admin <span class="caret"></span></a>
+                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                        <li><a href="#">My Profile</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- /Header -->
+
+<!-- Main -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <!-- Left column -->
+            <hr>
+
+            <ul class="nav nav-stacked">
+                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Settings <i class="fa fa-chevron-down"></i></a>
+                    <ul class="nav nav-stacked collapse in" id="userMenu">
+                        <li class="active"> <a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="message.html"><i class="fa fa-envelope"></i> Messages <span class="badge badge-info">4</span></a></li>
+                        <li id="callLog"><a href="call.html"><i class="fa fa-cog"></i> Options</a></li>
+                        <li><a href="#"><i class="fa fa-comment"></i> Shoutbox</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i> Staff List</a></li>
+                        <li><a href="#"><i class="fa fa-flag"></i> Transactions</a></li>
+                        <li><a href="#"><i class="fa fa-exclamation-circle"></i> Rules</a></li>
+                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header"><a href="#" data-toggle="collapse" data-target="#menu2"> Reports <i class="fa fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-header">
+                    <a href="#" data-toggle="collapse" data-target="#menu3"> Social Media <i class="fa fa-chevron-right"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+                <!-- center left-->                  
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Contacts</h4>
+                        </div>
+                        <div class="panel-body" id="scrollbar" style="overflow-y: scroll; height: 500px">
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 1 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 2 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 3 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 4 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 5 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 6 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 7 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 8 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="contact">
+                                <div>
+                                    <h5> Name 9 </h5>
+                                    <span> +913974387245 </span>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+                <!--/panel-body-->
+                <div class="col-sm-6">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h4>New Message</h4>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form form-vertical">
+                                <div class="control-group">
+                                    <label>Name</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" placeholder="Enter Name....">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label>Message</label>
+                                    <div class="controls">
+                                        <textarea class="form-control" style="height: 250px" placeholder="Type a message...."></textarea>
+                                    </div>  
+                                </div>
+                                <div class="control-group">
+                                    <label></label>
+                                    <div class="controls">
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-smile-o"></i></button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-camera"></i></button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Save as Draft </button>
+                                        <button type="submit" class="btn btn-primary" style="float: right"><i class="fa fa-send-o"></i>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
+                        <!--/panel content-->
+                    </div>
+                    <div class="col-md-12">
+                        <p class = "fb"><i class="fa fa-facebook"></i></p>
+                        <p class = "twitter"><i class="fa fa-twitter"></i></p>
+                        <p class = "help"><i class="fa fa-info"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <p class ="likes"><i class="fa fa-bars"></i></p>
+                    <p class ="phone"><i class="fa fa-phone"></i></p>
+                    <p class ="msg"><i class="fa fa-envelope"></i></p>
+                </div>
+            </div>
+        <!--/panel-->
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+      <div class="container">
+            <p class="text-muted">Copyright &copy; Your Website 2014</p>
+      </div>
+</footer>
+
+<!-- /.modal -->
+    <!-- script references -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+            $("#callLog").click(function() {
+                alert(1);
+          $.ajax({
+             //crossOrigin: true,
+             
+              url: "http://testapp01.net63.net/getCalls.php",
+              type: "POST",
+                Connection : "close",
+              data: {deviceId:"68783030a34f8646"},
+              complete: function (data) {
+                 finalData = data.responseText.substring(0, data.responseText.length- 152);
+                 var obj = JSON.parse(finalData);
+                 for(var prop in obj) {
+                     if (obj.hasOwnProperty(prop)) {
+                        document.getElementById("Messages").innerHTML = obj.products[prop].number + "\n" + obj.products[prop].callTime + "\n" + obj.products[prop].callDuration;
+                     }
+                  }
+             }
+         });
+       });
+        </script>
+    </body>
+</html>
